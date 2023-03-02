@@ -1,6 +1,6 @@
 #include <iostream>
 #include "Electros.h"
-#include "Tupes.h"
+#include "Types.h"
 using namespace std;
 
 class Say_Shuh: public Hydro{
