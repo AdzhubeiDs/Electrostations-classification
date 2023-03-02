@@ -51,7 +51,7 @@ public:
 class Wind: public Electros{
 public:
     Wind() {
-        string type_fuel = "гидроресурс";
+        string type_fuel = "ветер";
         fuel = 5;
     }
 };
@@ -59,7 +59,7 @@ public:
 class Geother: public Electros{
 public:
     Geother() {
-        string type_fuel = "гидроресурс";
+        string type_fuel = "подземное тепло";
         fuel = 5;
     }
 };
