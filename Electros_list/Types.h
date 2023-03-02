@@ -51,7 +51,7 @@ public:
 class Wind: public Electros{
 public:
     Wind() {
-        string type_fuel = "ветер";
+        string type_fuel = "гидроресурс";
         fuel = 5;
     }
 };
@@ -59,7 +59,36 @@ public:
 class Geother: public Electros{
 public:
     Geother() {
-        string type_fuel = "подземное тепло";
+        string type_fuel = "гидроресурс";
         fuel = 5;
+    }
+};
+class Diesel: public Electros{
+public:
+    Diesel(){
+        cout<<"Diesel created"<<endl;
+        fuel = 7;
+        type_fuel = "Дизельное топлево";
+    }
+    void GetFuel(){
+          cout<<fuel<<endl;
+      }
+    void GetTypeFuel(){
+          cout<<type_fuel<<endl;
+    }
+};
+
+class Tidal: public Electros{
+public:
+    Tidal(){
+        cout<<"Tidal created"<<endl;
+        fuel = 8;
+        type_fuel = "Энергия вращения Земли";
+    }
+    void GetFuel(){
+          cout<<fuel<<endl;
+      }
+    void GetTypeFuel(){
+          cout<<type_fuel<<endl;
     }
 };
