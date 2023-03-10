@@ -21,3 +21,6 @@ void Electros::GetFuel(){
 void Electros::GetName(){
     cout<<"хз5"<<endl;
 }
+void Electros::AddRegion(Region* region) {
+    cout<<"хз6"<<endl;
+}
