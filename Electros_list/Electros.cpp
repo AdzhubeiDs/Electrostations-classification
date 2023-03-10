@@ -3,8 +3,10 @@
 #include <iostream>
 using namespace std;
 
+class Region;
+
 Electros::Electros(){
-cout<< "Electros2 created" << endl;
+cout<< "Electros created" << endl;
 }
 void Electros::GetPower(){
     cout<<"хз1"<<endl;
