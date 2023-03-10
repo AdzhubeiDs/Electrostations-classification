@@ -1,34 +1,32 @@
-﻿// наследование.1.h : включаемый файл для стандартных системных включаемых файлов
-// или включаемые файлы для конкретного проекта.
 
-#pragma once
 
-#include <iostream>
+#ifndef MAIN_CPP_ELECTROS_H
+#define MAIN_CPP_ELECTROS_H
+#include <string>
+using namespace std;
 
-class Electros {
+class region;
+
+class Electros{
 protected:
-    int power;
-    string region;
+    string name;
+    float power;
+    region* region;
+    string region_name;
     string owner;
     int fuel;
     string type_fuel;
-
+    int size;
+    string power_name = "МВт";
 public:
-    Electros() {
-        cout << "Electros created" << endl;
-    }
-    virtual void GetPower() {
-        cout << "no" << endl;
-    }
-    virtual void GetRegion() {
-        cout << "no" << endl;
-    }
-    virtual void GetOwner() {
-        cout << "no" << endl;
-    }
-    virtual void GetFuel() {
-        cout << "no" << endl;
-    }
+    Electros();
+    virtual void GetPower();
+    virtual void GetRegion();
+    virtual void GetOwner();
+    virtual void GetFuel();
+    virtual void GetName();
 
 };
 
+
+#endif //MAIN_CPP_ELECTROS_H
