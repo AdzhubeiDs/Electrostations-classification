@@ -5,7 +5,7 @@
 #include <string>
 using namespace std;
 
-class region;
+class Region;
 
 class Electros{
 protected:
@@ -25,7 +25,7 @@ public:
     virtual void GetOwner();
     virtual void GetFuel();
     virtual void GetName();
-
+    virtual void AddRegion(Region* region);
 };
 
 
